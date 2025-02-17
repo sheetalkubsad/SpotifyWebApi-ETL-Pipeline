@@ -15,7 +15,7 @@ from airflow.providers.postgres.hooks.postgres import PostgresHook
 
 def getaudiobooks(ti):
 
-    client_credentials_manager = SpotifyClientCredentials(client_id = "b37d9bb15aba42ddb31be145e7c9245b", client_secret = "2b6bf657f5ea49f985e86d72bdf5c862")
+    client_credentials_manager = SpotifyClientCredentials(client_id = "", client_secret = "")
 
     sp = spotipy.Spotify(client_credentials_manager = client_credentials_manager)
 
